@@ -1,0 +1,87 @@
+body {
+    font: 400 1.4rem 'Lato', Verdana, Helvetica, sans-serif;
+}
+
+.btn-change {
+    background: lightseagreen;
+    margin: 0px;
+    float: left;
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition: all 0.5s ease-in-out;
+    border: 0px;
+    color: #fff;
+}
+
+.btn-change3 {
+    background: lightseagreen;
+    margin: 9px;
+    float: left;
+    border: 0px;
+    color: #fff;
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    -webkit-box-shadow: 0px 0px 0 0 #31708f inset, 0px 0px 0 #31708f inset;
+}
+
+.btn-change3:hover {
+    -webkit-box-shadow: 0px 50px 0 0px #30bb24 inset, 0px -50px 0 0px #30bb24 inset;
+}
+
+.btn-change4 {
+    background: lightseagreen;
+    margin: 9px;
+    float: left;
+    border: 0px;
+    color: #fff;
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    -webkit-box-shadow: 0px 0px 0 0 #31708f inset, 0px 0px 0 #31708f inset;
+}
+
+.btn-change4:hover {
+    -webkit-box-shadow: 0px 50px 0 0px #db1818 inset, 0px -50px 0 0px #db1818 inset;
+}
+
+.table-fixed tbody {
+    height: 300px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.table-fixed thead,
+.table-fixed tbody,
+.table-fixed tr,
+.table-fixed td,
+.table-fixed th {
+    display: block;
+}
+
+.table-fixed tbody td,
+.table-fixed tbody th,
+.table-fixed thead>tr>th {
+    float: left;
+    position: relative;
+    &::after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+}
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+
+body {
+    background: #74ebd5;
+    background: -webkit-linear-gradient(to right, #74ebd5, #ACB6E5);
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    min-height: 100vh;
+}

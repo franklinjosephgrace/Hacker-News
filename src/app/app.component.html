@@ -1,0 +1,44 @@
+<form class="needs-validation" [formGroup]="formGroup">
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+            <label for="validationTooltip01">Id</label>
+            <input type="text" class="form-control" placeholder="Id" formControlName="id">
+        </div>
+        <div class="col-md-4 mb-3">
+            <label for="validationTooltip02">Name</label>
+            <input type="text" class="form-control" placeholder="Name" formControlName="name">
+        </div>
+        <div class="col-md-4 mb-3">
+            <label for="validationTooltipUsername">Userid</label>
+            <input type="text" class="form-control" placeholder="User Id" formControlName="userid">
+        </div>
+    </div>
+    <button class="btn btn-primary" type="button" (click)="saveCourse()">Submit form</button>
+</form>
+
+<div class="container py-5">
+    <div class="row">
+        <div class="col-lg-7 mx-auto bg-white rounded shadow">
+            <div class="table-responsive">
+                <table class="table table-success table-striped ">
+                    <thead class="table-success table-primary">
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Userid</th>
+                        <th>Action</th>
+                    </thead>
+                    <tbody class="table-success">
+                        <tr *ngFor="let course of courses">
+                            <td>{{course.id}}</td>
+                            <td>{{course.name}}</td>
+                            <td>{{course.userid}}</td>
+                            <td><button class="btn btn-info btn-change3" (click)="editCourse(course.id)">Edit</button>
+                                <button class="btn btn-change4 btn-danger " (click)="deleteCourse(course.id)">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
